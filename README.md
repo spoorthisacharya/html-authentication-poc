@@ -1,6 +1,6 @@
 # HTML Authentication POC
 
-This project is a simple HTML-only authentication flow.
+This project is a simple HTML authentication flow.
 
 ## Pages Included
 
