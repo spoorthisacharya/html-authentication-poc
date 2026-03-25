@@ -61,5 +61,9 @@ The application is designed to work on:
 
 - HTML  
 - CSS  
-- Bootstrap 5  
+- Bootstrap 5
+
+## Assignment 2 pdf
+
+[Click here to view the assignment](Assignment_2.pdf)
 
