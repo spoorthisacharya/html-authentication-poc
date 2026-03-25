@@ -1,23 +1,67 @@
-# HTML Authentication POC
+# Authentication System (Bootstrap Styled)
 
-This project is a simple HTML authentication flow.
+This project is a simple authentication system built as part of my Full Stack Java Internship.  
+Initially, it was created using only HTML, and later enhanced using Bootstrap 5 and CSS to improve the design and user experience.
 
-## Pages Included
+---
 
-- index.html (Login Page)
-- register.html
-- forgot.html
-- reset.html
-- dashboard.html
+## What This Project Includes
 
-## Redirection Flow
+The project contains 5 main pages:
 
-1. Login (index.html) → Dashboard
-2. Registration → Login
-3. Forgot Password → Reset Password
-4. Reset Password → Login
-5. Logout → Login
+- Login Page  
+- Registration Page  
+- Forgot Password Page  
+- Reset Password Page  
+- Dashboard Page  
 
+---
+
+## Improvements Made
+
+- Used **Bootstrap 5** for layout and components  
+- Added **cards, buttons, and form styling**  
+- Improved spacing and alignment  
+- Used **Google Fonts (Poppins)**  
+- Added custom colors and background gradient  
+
+---
+
+## Additional Features 
+
+Some extra features were implemented to enhance the project:
+
+- Show/Hide password option (Login page)  
+- Password strength indicator (Register & Reset pages)  
+- Confirm password match check  
+- Dark mode toggle (Dashboard page)  
+- Smooth page animation (fade-in effect)  
+
+---
+
+## Page Flow
+
+- Login → Dashboard  
+- Register → Login  
+- Forgot Password → Reset Password  
+- Reset Password → Login  
+- Logout → Login  
+
+---
+
+## Responsiveness
+
+The application is designed to work on:
+- Desktop  
+- Laptop  
+- Tablet  
+- Mobile devices  
+
+
+---
 ## Technologies Used
 
-- HTML only
+- HTML  
+- CSS  
+- Bootstrap 5  
+
