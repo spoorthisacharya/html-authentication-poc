@@ -1,5 +1,3 @@
-# Authentication System (Bootstrap Styled)
-
 This project is a simple authentication system built as part of my Full Stack Java Internship.  
 Initially, it was created using only HTML, and later enhanced using Bootstrap 5 and CSS to improve the design and user experience.
 
