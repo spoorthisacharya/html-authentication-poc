@@ -2,36 +2,78 @@
 <html>
 <head>
     <title>Registration Page</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<div style="text-align:center; margin-top:100px;">
+<body class="d-flex justify-content-center align-items-center vh-100">
 
-<h2>Registration Page</h2>
+    <div class="card p-4 shadow" style="width: 400px;">
+        <h3 class="text-center mb-3">Register</h3>
 
-<form action="index.html">
-<label>Name:</label><br>
-<input type="text" required><br><br>
-
-<label>Email:</label><br>
-<input type="email" required><br><br>
-
-<label>Phone Number:</label><br>
-<input type="tel" required><br><br>
-
-<label>Password:</label><br>
-<input type="password" required><br><br>
-
-<label>Confirm Password:</label><br>
-<input type="password" required><br><br>
-
-<button type="submit">Register</button>
-</form>
-
-<br>
-<a href="index.html">I already have an account</a>
-
+        <form>
+            <input type="text" class="form-control mb-2" placeholder="Name">
+            <input type="email" class="form-control mb-2" placeholder="Email">
+            <input type="tel" class="form-control mb-2" placeholder="Phone">
+            <div class="mb-3">
+    <label class="form-label">Password</label>
+    <input type="password" id="regPassword" class="form-control"
+           onkeyup="checkStrength('regPassword','regStrength')">
+    <small id="regStrength"></small>
 </div>
 
+<div class="mb-3">
+    <label class="form-label">Confirm Password</label>
+    <input type="password" id="regConfirm" class="form-control"
+           onkeyup="checkMatch('regPassword','regConfirm','matchText')">
+    <small id="matchText"></small>
+</div>
+            <a href="index.html" class="btn btn-success w-100">Register</a>
+        </form>
+
+        <div class="text-center mt-2">
+            <a href="index.html">Already have account?</a>
+        </div>
+    </div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+function checkStrength(inputId, textId) {
+    let password = document.getElementById(inputId).value;
+    let text = document.getElementById(textId);
+
+    if (password.length === 0) {
+        text.innerHTML = "";
+    } else if (password.length < 4) {
+        text.innerHTML = "Weak";
+        text.style.color = "red";
+    } else if (password.length < 8) {
+        text.innerHTML = "Medium";
+        text.style.color = "orange";
+    } else {
+        text.innerHTML = "Strong";
+        text.style.color = "green";
+    }
+}
+
+function checkMatch(passId, confirmId, textId) {
+    let pass = document.getElementById(passId).value;
+    let confirm = document.getElementById(confirmId).value;
+    let text = document.getElementById(textId);
+
+    if (confirm.length === 0) {
+        text.innerHTML = "";
+    } else if (pass === confirm) {
+        text.innerHTML = "Passwords match";
+        text.style.color = "green";
+    } else {
+        text.innerHTML = "Passwords do not match";
+        text.style.color = "red";
+    }
+}
+</script>
 </body>
 </html>
